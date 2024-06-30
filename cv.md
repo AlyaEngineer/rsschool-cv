@@ -36,5 +36,5 @@ My first project in front-end development is my [CV](https://AlyaEngineer.github
  
 ## **LANGUAGES**  
 **Russian:** native  
-**English:** B1 Intermediate \([EF Set test result]()\)  
+**English:** B1 Intermediate \([EF Set test result](https://www.efset.org/cert/fzvVXM)\)
 **Serbian:** A1 Begginer *(University of Novi Sad, Center for Serbian as a Foreign Language)*
