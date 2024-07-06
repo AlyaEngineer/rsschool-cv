@@ -71,6 +71,10 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
  }
@@ -123,43 +127,62 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
+
+
 
 .section-profile{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0;
+  margin-top: 40px;
 }
 
-.section-profile-data{
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-}
-
-h1 {
+.main-title {
   font-family: 'Lato';
   font-style: normal;
-  font-size: 80px;
-  font-weight: 400;
+  font-size: 60px;
+  font-weight: 350;
 }
 
 h3 {
   font-family: 'Lato';
   font-style: normal;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 300;  
 }
 
-h2 {
+.main-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.section-title {
   font-family: 'Lato';
   font-style: normal;
   font-size: 35px;
-  font-weight: 300;
+  font-weight: 350;
+}
 
+ul {
+  list-style-type:  none;
+}
+
+.section-list {
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.section-information {
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 300;
 }
