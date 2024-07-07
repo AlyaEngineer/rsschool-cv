@@ -73,19 +73,19 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid #b39e9f;
-  
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
 }
 
 a {
   text-decoration: none;
-  color:  #3c1515;
+  color: #b39e9f;
   transition: color 0.5s;
 }
 
 a:hover {
-  color: #3c1515;
+  color: #310b0d;
 }
 
 .container {
@@ -116,7 +116,8 @@ a:hover {
   font-family: 'Lato';
   font-style: normal;
   font-size: 25px;
-  font-weight: 300;  
+  font-weight: 300;
+  margin: 0;
 }
 
 .nav-link {
@@ -133,13 +134,15 @@ a:hover {
 
 .main-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .section {
   width: calc(50% - 40px);
-  margin: 20px;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .section-profile{
@@ -157,9 +160,10 @@ a:hover {
   font-family: 'Lato';
   font-style: normal;
   font-size: 30px;
-  font-weight: 350;
-  letter-spacing: 1.8px;
+  font-weight: 300;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  color: #3c1515
   margin: 0;
 }
 
@@ -169,18 +173,20 @@ a:hover {
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 1.8px;
+  text-transform: uppercase;
   margin: 0;  
 }
 
 .section-title {
   font-family: 'Lato';
   font-style: normal;
-  font-size: 25px;
-  font-weight: 350;
+  font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #fff;
   background-color: #b39e9f;
+  padding-left: 5px;
 }
 
 ul {
@@ -216,6 +222,10 @@ i {
   line-height: 1.5;
 }
 
+.fa-circle {
+  width: 15px;
+  height: 15px;
+}
 
 .section-information {
   font-family: 'Lato';
@@ -271,21 +281,28 @@ code {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  color: #3c1515;
+  color: #fff;
 }
+
 .fa-github {
   margin: 0;
   margin-right: 10px;
   margin-left: 20px;
   padding: 0;
-  color: #3c1515;
+  color: #fff;
 }
 
 .footer-link {
   padding: 0 20px;
   transition: 0.3s;
+  color: #fff;
 }
 
 .img-logo {
   width: 120px;
+  
+}
+
+.img-logo:hover {
+  cursor: pointer;
 }
