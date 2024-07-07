@@ -72,7 +72,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid red;
+  border: 1px solid #b39e9f;
+  
+  margin: 0 auto;
+  padding: 0;
 }
 
 a {
@@ -208,7 +211,8 @@ i {
   margin-right: 15px;
 }
 
-.contacts-item {
+.contacts-item,
+.section-item {
   line-height: 1.5;
 }
 
@@ -221,8 +225,7 @@ i {
   letter-spacing: 1.1px;
 }
 
-code {
-  
+code {  
   font-family: 'Lato';
   font-style: normal;
   font-size: 20px;
@@ -230,4 +233,59 @@ code {
   letter-spacing: 1.1px;
   margin: 0;
   padding: 0;
+}
+
+.footer {
+  background-color: #b39e9f; 
+  width: 100%;
+  height: 90px;
+}
+
+.footer-container {
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100%;  
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  color: #3c1515;
+}
+.fa-github {
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 20px;
+  padding: 0;
+  color: #3c1515;
+}
+
+.footer-link {
+  padding: 0 20px;
+  transition: 0.3s;
+}
+
+.img-logo {
+  width: 120px;
 }
