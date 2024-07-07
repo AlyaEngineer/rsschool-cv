@@ -43,10 +43,10 @@
             <section class="section" id="contacts">
                 <h2 class="section-title">Contacts</h2>
                     <ul class="section-list">
-                        <i class="fa-solid fa-location-dot"></i><li class="contacts-item">Novi Sad, Serbia</li>
-                        <i class="fa-solid fa-phone"></i><li class="contacts-item">+381 65/6136943</li>
-                        <i class="fa-solid fa-envelope"></i><li class="contacts-item">front.dev.edu@gmail.com </li>
-                        <i class="fa-brands fa-discord"></i><li class="contacts-item">Alla Ts(#alla8820)</li>
+                        <li class="contacts-item"><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/Novi+Sad/@45.2715426,19.7670399,12z/data=!4m6!3m5!1s0x475b10613de93455:0xb6f7d683724fe28!8m2!3d45.2396085!4d19.8227056!16zL20vMHN3d24?hl=en&entry=ttu">Novi Sad, Serbia</a></li>
+                        <li class="contacts-item"><i class="fa-solid fa-phone"></i><a href="tel:+381656136943">+381 65/6136943</a></li>
+                        <li class="contacts-item"><i class="fa-solid fa-envelope"></i><a href="mailto:front.dev.edu@gmail.com">front.dev.edu@gmail.com</a></li>
+                        <li class="contacts-item"><i class="fa-brands fa-discord"></i>Alla Ts(#alla8820)</li>
                     </ul>
             </section>
             <section class="section" id="about">
@@ -72,7 +72,7 @@
             </section>
             <section class="section" id="experiences">
                 <h2 class="section-title">Experiences</h2>
-                    <p class="section-information">My first project in front-end development is my CV</p>                    
+                    <p class="section-information">My first project in front-end development is my <a href="https://alyaengineer.github.io/rsschool-cv/">CV</a>.</p>                    
             </section>
             <section class="section" id="skills">
                 <h2 class="section-title">Skills</h2>
@@ -84,13 +84,38 @@
                     </ul>
             </section>
             <section class="section" id="code">
-                <h2 class="section-title">Code</h2>                    
+                <h2 class="section-title">Code</h2>
+                <p class="section-information">
+                    <pre>
+                        <code>
+(function () {
+    const burgerItem = document.querySelector('.header_list_burger');
+    console.log(burgerItem);
+    const menu = document.querySelector('.header_list');
+    burgerItem.addEventListener('click', () => {
+        burgerItem.classList.toggle('burger_active');
+        menu.classList.toggle('header_list_click');    
+    });
+                                
+    menu.addEventListener('click', (e) => {
+        if (e.target.tagName == 'A') {
+        burgerItem.classList.remove('burger_active');
+        menu.classList.remove('header_list_click');              
+        }
+    });
+                        
+}());
+                        
+                        </code>
+                    </pre>  
+                </p>
+                                 
             </section>
             <section class="section" id="languages">
                 <h2 class="section-title">Languages</h2>
                     <ul class="section-list">
                         <li class="section-item">Russian: native</li>
-                        <li class="section-item">English: B1 Intermediate ([EF Set test result](https://www.efset.org/cert/fzvVXM))</li>
+                        <li class="section-item">English: B1 Intermediate (<a href="https://www.efset.org/cert/fzvVXM">EF Set test result</a>)</li>
                         <li class="section-item">Serbian: A1 Begginer (University of Novi Sad, Center for Serbian as a Foreign Language)</li>
                     </ul>          
             </section>
