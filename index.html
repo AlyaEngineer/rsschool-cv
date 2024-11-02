@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        
+
 </head>
 <body>
     <header class="header">
@@ -32,7 +32,7 @@
     <main>
         <div class="container main-container">
             <section class="section section-profile" id="profile">
-                <img class="img-profile" src="./assets/img/photo-for-cv-project.jpg" alt="profile-photo">                                               
+                <img class="img-profile" src="./assets/img/photo-for-cv-project.jpg" alt="profile-photo">
                 <div class="section-profile-title">
                     <h1 class="section-profile main-title">ALLA TSAIUKOVA</h1>
                     <h3 class="section-profile second-title">Junior Front-End Developer</h3>
@@ -54,18 +54,21 @@
             <section class="section" id="education">
                 <h2 class="section-title">Education</h2>
                     <ul class="section-list">
-                        <li class="section-item"><i class="fa-solid fa-minus"></i>Irkutsk State Technical University</li>
+                        <li class="section-item"><i class="fa-solid fa-minus"></i>Irkutsk State Technical University
                             <ul>
                                 <li class="department">Irkutsk, 2008-2013</li>
-                            </ul>                        
-                        <li class="section-item"><i class="fa-solid fa-minus"></i>Institute of Solar-Terrestrial Physics</li>
+                            </ul>
+                        </li>
+                        <li class="section-item"><i class="fa-solid fa-minus"></i>Institute of Solar-Terrestrial Physics
                             <ul>
                                 <li class="department">Irkutsk, 2013-2015</li>
-                            </ul>                        
-                        <li class="section-item"><i class="fa-solid fa-minus"></i>The Rolling Scopes School (online courses)</li>
+                            </ul>
+                        </li>
+                        <li class="section-item"><i class="fa-solid fa-minus"></i>The Rolling Scopes School (online courses)
                             <ul>
                                 <li class="department">JS / Front-End. Stage 0, 2024</li>
-                            </ul>                        
+                            </ul>
+                        </li>
                     </ul>
             </section>
             <section class="section" id="projects">
@@ -85,24 +88,22 @@
                 <h2 class="section-title">Code</h2>
                 <pre>
                     <code class="section-information">
-(function () {
-    const burgerItem = document.querySelector('.header_list_burger');
-    console.log(burgerItem);
-    const menu = document.querySelector('.header_list');
-    burgerItem.addEventListener('click', () => {
-        burgerItem.classList.toggle('burger_active');
-        menu.classList.toggle('header_list_click');    
-    });
-                                                        
-     menu.addEventListener('click', (e) => {
-        if (e.target.tagName == 'A') {
-        burgerItem.classList.remove('burger_active');
-        menu.classList.remove('header_list_click');              
+function strCount(obj){
+
+    let count = 0;
+
+    if (typeof obj === 'string') {
+    count ++;
+    } else {
+        if (obj === null || obj === undefined) return 0;
+        for (let subobj of Object.values(obj)) {
+        count += strCount(subobj);
         }
-    });                        
-}());
+    }
+    return count;
+    }
                     </code>
-                </pre>                               
+                </pre>
             </section>
             <section class="section" id="languages">
                 <h2 class="section-title">Languages</h2>
