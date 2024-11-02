@@ -92,12 +92,12 @@
     const burgerItem = document.querySelector('.header_list_burger');
     console.log(burgerItem);
     const menu = document.querySelector('.header_list');
-    burgerItem.addEventListener('click', () => {
+    burgerItem.addEventListener('click', () =&gt; {
         burgerItem.classList.toggle('burger_active');
         menu.classList.toggle('header_list_click');    
     });
                                                         
-     menu.addEventListener('click', (e) => {
+     menu.addEventListener('click', (e) =&gt; {
         if (e.target.tagName == 'A') {
         burgerItem.classList.remove('burger_active');
         menu.classList.remove('header_list_click');              
